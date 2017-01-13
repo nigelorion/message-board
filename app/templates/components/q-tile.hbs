@@ -1,3 +1,5 @@
 <li>
   {{question.name}} {{question.date}} {{question.content}}
+  {{question-update question=question update="update"}}
+  {{#link-to 'question' question.id}}more..{{/link-to}}
 </li>
