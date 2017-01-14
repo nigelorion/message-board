@@ -7,21 +7,20 @@ export default Ember.Route.extend({
       answers: this.store.findAll('answer')
     });
   },
-
   actions: {
-    saveQuestion(params) {
+    update(rental, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          rental.set(key,params[key]);
+        }
+      });
+      rental.save();
+      this.transitionTo('index');
+    },
+    save(params) {
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.transitionTo('index');
-    },
-    update(question, params) {
-      Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
-          question.set(key,params[key]);
-        }
-      });
-      question.save();
-      this.transitionTo('index');
-    },
+    }
   }
 });

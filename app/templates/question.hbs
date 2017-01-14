@@ -1,4 +1,12 @@
-<h2>notes  for {{model.name}}'s question</h2>
+<h1>{{model.content}}</h1>
+<h4>{{model.notes}}</h4>
 
+{{new-answer saveAnswer="saveAnswer" answer=model}}
 
-<p>testing testing</p>
+<h2>Answers:</h2>
+
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>

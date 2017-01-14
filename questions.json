@@ -10,5 +10,12 @@
     "name": "Sally Wind",
     "date": "10/30/2014",
     "content": "Why is Bootstrap the best?"
+  }],
+  "answers": [{
+    "name": "Andrea",
+    "content": "Did not fall down."
+  }, {
+    "author": "Alex",
+    "content": "Nice view of the volcano!"
   }]
 }
