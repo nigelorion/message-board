@@ -1,12 +1,9 @@
 <h1>Add your questions here</h1>
 
+{{new-question save="save"}}
+
 <ul>
   {{#each model.questions as |question|}}
     {{q-tile question=question update="update"}}
   {{/each}}
 </ul>
-
-{{new-question save="save"}}
-
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

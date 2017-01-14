@@ -1,5 +1,6 @@
 <li>
-  {{question.name}} {{question.date}} {{question.content}}
+  {{question.name}}
+  <h3>{{question.content}}</h3>
   {{question-update question=question update="update"}}
-  {{#link-to 'question' question.id}}more..{{/link-to}}
+  {{#link-to 'question' question.id}}answers..{{/link-to}}
 </li>

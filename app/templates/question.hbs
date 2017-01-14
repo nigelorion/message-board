@@ -1,12 +1,12 @@
 <h1>{{model.content}}</h1>
 <h4>{{model.notes}}</h4>
 
-{{new-answer saveAnswer="saveAnswer" answer=model}}
+{{new-answer saveAnswer="saveAnswer" question=model}}
 
 <h2>Answers:</h2>
 
 <ul>
-  {{#each question.answers as |answer|}}
+  {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}
 </ul>

@@ -1,7 +1,13 @@
 <div class="main">
   <div class="header">
     <h1>Ask Developer Questions</h1>
-  </div>
-  {{outlet}}
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Contact{{/link-to}}
 
+  </div>
+ <div class="outlet">
+
+   {{outlet}}
+ </div>
 </div>

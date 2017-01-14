@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.main {
+  text-align: center;
+  margin-top: 1%;
+}
+
+
+.outlet {
+  margin-top: 3%;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 2%;
+  background-color: rgba(131, 158, 204, 0.83);
+  width: 33%;
+  margin: 3% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 140px;
+}
+
+button {
+  font-size: 1.5em;
+  transition: all 300ms;
+  border: none;
+  padding: 1%;
+}
+
+button:hover {
+  background-color: rgb(125, 106, 153);
+}
